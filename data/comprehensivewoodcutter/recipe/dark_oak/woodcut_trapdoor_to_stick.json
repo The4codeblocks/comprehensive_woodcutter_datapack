@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "dark_oak_trapdoor",
+  "result": {
+    "id": "minecraft:stick",
+    "count":4
+  }
+}
