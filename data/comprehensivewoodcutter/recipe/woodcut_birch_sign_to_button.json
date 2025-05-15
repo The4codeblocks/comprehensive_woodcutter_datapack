@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "birch_sign",
+  "result": {
+    "id": "minecraft:birch_button",
+    "count":2
+  }
+}

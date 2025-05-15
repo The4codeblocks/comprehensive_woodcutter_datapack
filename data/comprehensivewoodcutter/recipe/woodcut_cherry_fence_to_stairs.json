@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cherry_fence",
+  "result": {
+    "id": "minecraft:cherry_stairs",
+    "count":1
+  }
+}
