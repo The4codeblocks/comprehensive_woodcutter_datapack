@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "spruce_button",
+  "result": {
+    "id": "minecraft:spruce_button",
+    "count":1
+  }
+}

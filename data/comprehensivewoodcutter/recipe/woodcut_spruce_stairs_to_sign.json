@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "spruce_stairs",
+  "result": {
+    "id": "minecraft:spruce_sign",
+    "count":3
+  }
+}
