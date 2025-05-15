@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "jungle_boat",
+  "result": {
+    "id": "minecraft:stick",
+    "count":16
+  }
+}
