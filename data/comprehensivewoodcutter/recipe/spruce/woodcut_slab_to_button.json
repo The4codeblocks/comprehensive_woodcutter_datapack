@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "spruce_slab",
+  "result": {
+    "id": "minecraft:spruce_button",
+    "count":4
+  }
+}

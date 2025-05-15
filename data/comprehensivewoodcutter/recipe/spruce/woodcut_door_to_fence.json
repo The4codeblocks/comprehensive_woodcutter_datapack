@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "spruce_door",
+  "result": {
+    "id": "minecraft:spruce_fence",
+    "count":2
+  }
+}
