@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "pale_oak_planks",
-  "result": {
-    "id": "minecraft:pale_oak_pressure_plate",
-    "count":2
-  }
-}

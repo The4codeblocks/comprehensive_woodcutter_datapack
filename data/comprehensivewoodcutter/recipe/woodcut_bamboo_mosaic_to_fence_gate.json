@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "bamboo_mosaic",
-  "result": {
-    "id": "minecraft:bamboo_fence_gate",
-    "count":2
-  }
-}

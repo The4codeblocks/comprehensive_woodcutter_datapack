@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "birch_fence",
-  "result": {
-    "id": "minecraft:birch_pressure_plate",
-    "count":2
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "mangrove_stairs",
-  "result": {
-    "id": "minecraft:mangrove_slab",
-    "count":1
-  }
-}

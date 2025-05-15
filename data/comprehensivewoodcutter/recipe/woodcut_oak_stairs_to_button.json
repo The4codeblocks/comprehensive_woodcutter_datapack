@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "oak_stairs",
-  "result": {
-    "id": "minecraft:oak_button",
-    "count":6
-  }
-}

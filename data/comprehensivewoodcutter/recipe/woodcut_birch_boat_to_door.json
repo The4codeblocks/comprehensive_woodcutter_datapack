@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "birch_boat",
-  "result": {
-    "id": "minecraft:birch_door",
-    "count":2
-  }
-}

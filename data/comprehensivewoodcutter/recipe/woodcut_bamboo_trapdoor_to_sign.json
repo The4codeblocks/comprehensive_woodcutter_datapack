@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "bamboo_trapdoor",
-  "result": {
-    "id": "minecraft:bamboo_sign",
-    "count":4
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "jungle_door",
-  "result": {
-    "id": "minecraft:stick",
-    "count":8
-  }
-}

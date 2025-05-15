@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "oak_slab",
-  "result": {
-    "id": "minecraft:oak_sign",
-    "count":2
-  }
-}

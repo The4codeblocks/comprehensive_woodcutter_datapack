@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "dark_oak_boat",
-  "result": {
-    "id": "minecraft:dark_oak_trapdoor",
-    "count":4
-  }
-}

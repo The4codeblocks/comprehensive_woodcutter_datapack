@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "mangrove_fence_gate",
-  "result": {
-    "id": "minecraft:stick",
-    "count":2
-  }
-}

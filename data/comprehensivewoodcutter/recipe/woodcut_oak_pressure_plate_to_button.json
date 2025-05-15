@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "oak_pressure_plate",
-  "result": {
-    "id": "minecraft:oak_button",
-    "count":4
-  }
-}

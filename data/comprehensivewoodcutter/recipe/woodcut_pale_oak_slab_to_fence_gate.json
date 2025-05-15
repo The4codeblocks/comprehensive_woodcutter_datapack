@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "pale_oak_slab",
-  "result": {
-    "id": "minecraft:pale_oak_fence_gate",
-    "count":1
-  }
-}

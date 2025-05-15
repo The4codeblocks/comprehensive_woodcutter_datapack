@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "jungle_boat",
-  "result": {
-    "id": "minecraft:jungle_button",
-    "count":32
-  }
-}

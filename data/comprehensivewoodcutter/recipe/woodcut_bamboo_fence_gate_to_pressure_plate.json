@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "bamboo_fence_gate",
-  "result": {
-    "id": "minecraft:bamboo_pressure_plate",
-    "count":1
-  }
-}

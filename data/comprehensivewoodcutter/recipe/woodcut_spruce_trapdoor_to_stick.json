@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "spruce_trapdoor",
-  "result": {
-    "id": "minecraft:stick",
-    "count":4
-  }
-}
