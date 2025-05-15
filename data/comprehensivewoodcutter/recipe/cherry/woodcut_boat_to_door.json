@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cherry_boat",
+  "result": {
+    "id": "minecraft:cherry_door",
+    "count":2
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "cherry_pressure_plate",
+  "result": {
+    "id": "minecraft:stick",
+    "count":2
+  }
+}
