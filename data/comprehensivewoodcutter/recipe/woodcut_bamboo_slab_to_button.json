@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "bamboo_slab",
+  "result": {
+    "id": "minecraft:bamboo_button",
+    "count":4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "bamboo_sign",
+  "result": {
+    "id": "minecraft:bamboo_sign",
+    "count":1
+  }
+}
