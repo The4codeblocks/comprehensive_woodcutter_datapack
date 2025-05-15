@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "pale_oak_boat",
+  "result": {
+    "id": "minecraft:pale_oak_trapdoor",
+    "count":4
+  }
+}
