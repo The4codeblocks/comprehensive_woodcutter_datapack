@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "mangrove_boat",
+  "result": {
+    "id": "minecraft:mangrove_button",
+    "count":32
+  }
+}
