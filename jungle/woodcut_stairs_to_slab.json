@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "jungle_stairs",
+  "result": {
+    "id": "minecraft:jungle_slab",
+    "count":1
+  }
+}

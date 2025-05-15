@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#jungle_logs",
+  "result": {
+    "id": "minecraft:jungle_boat",
+    "count":2
+  }
+}
