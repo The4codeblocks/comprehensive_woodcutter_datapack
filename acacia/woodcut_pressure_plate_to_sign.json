@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "acacia_pressure_plate",
-  "result": {
-    "id": "minecraft:acacia_sign",
-    "count":2
-  }
-}

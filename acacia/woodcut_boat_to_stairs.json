@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "acacia_boat",
-  "result": {
-    "id": "minecraft:acacia_stairs",
-    "count":5
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "acacia_sign",
-  "result": {
-    "id": "minecraft:acacia_button",
-    "count":2
-  }
-}
