@@ -2,6 +2,6 @@
   "pack": {
     "description": "Comprehensive Woodcutter",
     "pack_format": 71,
-    "supported_formats": [41, 71]
+    "supported_formats": [48, 71]
   }
 }
