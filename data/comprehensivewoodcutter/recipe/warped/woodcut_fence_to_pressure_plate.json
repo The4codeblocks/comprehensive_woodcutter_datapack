@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "warped_fence",
+  "result": {
+    "id": "minecraft:warped_pressure_plate",
+    "count":2
+  }
+}
