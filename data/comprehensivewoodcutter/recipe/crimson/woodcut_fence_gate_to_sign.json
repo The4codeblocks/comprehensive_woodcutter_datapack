@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "crimson_fence_gate",
+  "result": {
+    "id": "minecraft:crimson_sign",
+    "count":2
+  }
+}
