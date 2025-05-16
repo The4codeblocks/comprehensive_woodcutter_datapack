@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#acacia_logs",
+  "result": {
+    "id": "minecraft:acacia_trapdoor",
+    "count":8
+  }
+}

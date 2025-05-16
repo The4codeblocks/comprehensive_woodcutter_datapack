@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "acacia_trapdoor",
+  "result": {
+    "id": "minecraft:acacia_button",
+    "count":8
+  }
+}
