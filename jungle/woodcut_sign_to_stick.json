@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "jungle_sign",
-  "result": {
-    "id": "minecraft:stick",
-    "count":1
-  }
-}
