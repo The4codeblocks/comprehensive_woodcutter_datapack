@@ -18,12 +18,19 @@ public class Main {
   
   static String[] bambooouttypes = {"raft","button","door","fence","fence_gate","planks","pressure_plate","sign","slab","stairs","trapdoor","stick","mosaic","mosaic_slab","mosaic_stairs"};
   static int[]   bamboooutcounts = {256, 8, 128, 64, 32, 64, 32, 16, 32, 48, 64, 16, 64, 32, 48};
+
+  static String[] netherintypes = {"#%s_stems","%s_button","%s_door","%s_fence","%s_fence_gate","%s_planks","%s_pressure_plate","%s_sign","%s_slab","%s_stairs","%s_trapdoor"};
+  static int[]   netherincounts = {512, 8, 128, 64, 32, 64, 32, 16, 32, 48, 64};
+  
+  static String[] netherouttypes = {"button","door","fence","fence_gate","planks","pressure_plate","sign","slab","stairs","trapdoor","stick"};
+  static int[]   netheroutcounts = {8, 128, 64, 32, 64, 32, 16, 32, 48, 64, 16};
   
   public static void main(String[] args) {
       File newDirectory = new File(root, "wc");
-newDirectory.exists();
 newDirectory.mkdir();
     for (int i = 0; i < woodtypes.length; i++) {
+    File dir = new File(root + "/wc", woodtypes[i]);
+    dir.mkdir();
     for (int j = 0; j < intypes.length; j++) {
     for (int k = 0; k < outtypes.length; k++) {
         if (intypes[j] == outtypes[k]) continue;
@@ -32,7 +39,7 @@ newDirectory.mkdir();
       try {
           String intype = new String(intypes[j]);
           intype = intype.substring(intype.charAt(0) == '#' ? 4 : 3);
-          String fname = root+"/wc/woodcut_"+woodtypes[i]+"_"+intype+"_to_"+outtypes[k]+".json";
+          String fname = root+"/wc/"+woodtypes[i]+"/woodcut_"+intype+"_to_"+outtypes[k]+".json";
     File file = new File(fname);
       FileWriter fileW = new FileWriter(file);
         fileW.write(r(woodtypes[i],intypes[j],outtypes[k],count));
@@ -41,6 +48,8 @@ newDirectory.mkdir();
     }
     }
     }
+    File dir = new File(root + "/wc", "bamboo");
+    dir.mkdir();
     for (int j = 0; j < bamboointypes.length; j++) {
     for (int k = 0; k < bambooouttypes.length; k++) {
         if (bamboointypes[j] == bambooouttypes[k]) continue;
@@ -49,7 +58,7 @@ newDirectory.mkdir();
       try {
           String intype = new String(bamboointypes[j]);
           intype = intype.substring(intype.charAt(0) == '#' ? 4 : 3);
-          String fname = root+"/wc/woodcut_bamboo_"+intype+"_to_"+bambooouttypes[k]+".json";
+          String fname = root+"/wc/bamboo/woodcut_"+intype+"_to_"+bambooouttypes[k]+".json";
     File file = new File(fname);
       FileWriter fileW = new FileWriter(file);
       System.out.println(file.createNewFile());
@@ -59,10 +68,85 @@ newDirectory.mkdir();
       System.out.println("e");
     }
     }
+    dir = new File(root + "/wc", "crimson");
+    dir.mkdir();
+    for (int j = 0; j < netherintypes.length; j++) {
+    for (int k = 0; k < netherouttypes.length; k++) {
+        if (netherintypes[j] == netherouttypes[k]) continue;
+      int count = netherincounts[j]/netheroutcounts[k];
+      if (count == 0) continue;
       try {
-    String sourceFile = root+"myfiles/wc";
+          String intype = new String(netherintypes[j]);
+          intype = intype.substring(intype.charAt(0) == '#' ? 4 : 3);
+          String fname = root+"/wc/crimson/woodcut_"+intype+"_to_"+netherouttypes[k]+".json";
+    File file = new File(fname);
+      FileWriter fileW = new FileWriter(file);
+      System.out.println(file.createNewFile());
+        fileW.write(r("crimson",netherintypes[j],netherouttypes[k],count));
+        fileW.flush();
+     } catch (IOException e) {System.out.println("hehe");}
+      System.out.println("e");
+    }
+    }
+    dir = new File(root + "/wc", "warped");
+    dir.mkdir();
+    for (int j = 0; j < netherintypes.length; j++) {
+    for (int k = 0; k < netherouttypes.length; k++) {
+        if (netherintypes[j] == netherouttypes[k]) continue;
+      int count = netherincounts[j]/netheroutcounts[k];
+      if (count == 0) continue;
+      try {
+          String intype = new String(netherintypes[j]);
+          intype = intype.substring(intype.charAt(0) == '#' ? 4 : 3);
+          String fname = root+"/wc/warped/woodcut_"+intype+"_to_"+netherouttypes[k]+".json";
+    File file = new File(fname);
+      FileWriter fileW = new FileWriter(file);
+      System.out.println(file.createNewFile());
+        fileW.write(r("warped",netherintypes[j],netherouttypes[k],count));
+        fileW.flush();
+     } catch (IOException e) {System.out.println("hehe");}
+      System.out.println("e");
+    }
+    }
+    for (int i = 0; i < woodtypes.length; i++) {
+      try {
+    String sourceFile = root+"/wc/"+woodtypes[i];
     //File file = new File("/myfiles/dp.zip");
-    FileOutputStream fos = new FileOutputStream(root+"/dp.zip");
+    FileOutputStream fos = new FileOutputStream(root+"/"+woodtypes[i]+".zip");
+    ZipOutputStream zipOut = new ZipOutputStream(fos);
+
+    File fileToZip = new File(sourceFile);
+    zipFile(fileToZip, fileToZip.getName(), zipOut);
+    zipOut.close();
+    fos.close();
+     } catch (IOException e) {System.out.println("hehe");}
+    }
+      try {
+    String sourceFile = root+"/wc/bamboo";
+    //File file = new File("/myfiles/dp.zip");
+    FileOutputStream fos = new FileOutputStream(root+"/bamboo.zip");
+    ZipOutputStream zipOut = new ZipOutputStream(fos);
+
+    File fileToZip = new File(sourceFile);
+    zipFile(fileToZip, fileToZip.getName(), zipOut);
+    zipOut.close();
+    fos.close();
+     } catch (IOException e) {System.out.println("hehe");}
+      try {
+    String sourceFile = root+"/wc/warped";
+    //File file = new File("/myfiles/dp.zip");
+    FileOutputStream fos = new FileOutputStream(root+"/warped.zip");
+    ZipOutputStream zipOut = new ZipOutputStream(fos);
+
+    File fileToZip = new File(sourceFile);
+    zipFile(fileToZip, fileToZip.getName(), zipOut);
+    zipOut.close();
+    fos.close();
+     } catch (IOException e) {System.out.println("hehe");}
+      try {
+    String sourceFile = root+"/wc/crimson";
+    //File file = new File("/myfiles/dp.zip");
+    FileOutputStream fos = new FileOutputStream(root+"/crimson.zip");
     ZipOutputStream zipOut = new ZipOutputStream(fos);
 
     File fileToZip = new File(sourceFile);
@@ -91,12 +175,8 @@ newDirectory.mkdir();
         }
         File[] children = fileToZip.listFiles();
         for (File childFile : children) {
-            zipFile(childFile, fileName + "/" + childFile.getName(), zipOut);
-        }
-        return;
-    }
-    FileInputStream fis = new FileInputStream(fileToZip);
-    ZipEntry zipEntry = new ZipEntry(fileName);
+    FileInputStream fis = new FileInputStream(childFile);
+    ZipEntry zipEntry = new ZipEntry(fileName + "/" + childFile.getName());
     zipOut.putNextEntry(zipEntry);
     byte[] bytes = new byte[1024];
     int length;
@@ -104,5 +184,8 @@ newDirectory.mkdir();
         zipOut.write(bytes, 0, length);
     }
     fis.close();
+        }
+        return;
+    }
   }
 }
