@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "jungle_pressure_plate",
+  "result": {
+    "id": "minecraft:jungle_button",
+    "count":4
+  }
+}
